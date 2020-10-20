@@ -1,0 +1,300 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin: 0px;							/*设置外边距*/
+	padding: 0px; 				    		/*设置内边距*/
+	font-size:14px; 						/*设置页面所有文字的默认大小*/
+	background-image: url(images/body.gif); 	/*设置背景图片*/
+}
+header,footer{
+	width: 960px; 						/*设置主体页面宽度*/
+	margin: 0 auto; 						/*设置主体页面左右居中显示*/
+	background-color: #FFFFFF; 			/*设置背景颜色*/
+}
+footer{
+	text-align: center; 						/*设置文字居中对齐*/
+	background-color: #b2a695; 				/*设置背景颜色*/
+	line-height: 25px; 						/*设置行高*/
+	padding-top: 20px;						/*设置20像素的顶部内边距*/
+}
+	/*该<footer>块的实际高度为line-height×2＋padding-top =50px+20px=70px*/
+.left{
+	float:left;
+}
+#menu{
+	height: 44px; 				    	/*设置盒子内容的高度为44像素*/
+	border-top: 10px solid #000000; 	/*设置盒子的上边线，包括粗细、线型和颜色*/
+}
+#menu a{
+	font-family: "宋体";		    	/*设置超链接字体*/
+	font-size: 14px; 				/*设置超链接文字大小*/
+	color: #000000; 				/*设置超链接文字颜色*/
+	line-height:44px; 				/*设置超链接行高*/
+	padding:0px 8px; 				/*设置超链接上下内边距为0，左右为8像素*/
+	text-decoration: none; 			/*清除超链接下划线*/
+	display:inline-block; 			/*将超链接显示为行内块元素*/
+}
+#menu a:hover,#menu a.selected{  	/*设置nav块中的超链接在鼠标滑过或选中状态时的属性*/
+	color: #FFFFFF; 				/*设置超链接文字颜色*/
+	background-color: #cc0000;		/*设置超链接背景颜色*/
+}
+#lujing{
+	height:37px;                /*设置高度*/
+	text-align: left; 			/*设置文字左对齐*/
+	line-height: 35px; 			/*设置行高*/
+	background-image:url(images/navbg.gif);  /*设置背景图片*/
+	background-repeat:repeat-x;	/*设置背景图片水平重复*/
+					
+}
+#lujing a{					/*设置超链接样式*/
+	color: #333333; 			/*设置文字颜色*/
+	text-decoration: none; 		/*去除下划线*/
+	margin:0 5px;  			/*设置超链接的上下外边距为0，左右为5像素*/
+}
+#content{
+	margin: 0 auto; 						/*设置主体页面左右居中显示*/
+	background-color: #FFFFFF; 			/*设置背景颜色*/
+	width:880px;           /*设置块内容的宽度*/
+	padding: 20px 40px;      /*设置上下内边距和左右内边距*/
+}
+input,form,ul,li,h1,h2,h3,h4,p{
+	margin: 0px;
+	padding: 0px;
+	list-style:none;
+}
+h3{
+	font-size: 16px; 						/*设置文字大小*/
+	text-align: center; 						/*设置文字左右居中对齐*/
+	border-bottom: 1px dashed #999999;		/*添加下边框虚线效果*/
+	line-height: 35px; 						/*设置行高*/
+}
+h4{
+	text-align: right; 						/*设置文字右对齐*/
+	font-family: Arial, Helvetica, sans-serif; 	/*设置字体*/
+	color: #666666; 						/*设置文字颜色*/
+}
+#content p{
+	text-indent: 2em; 						/*设置首行缩进2字符*/
+	line-height: 25px; 						/*设置行高*/
+	margin-top: 10px; 						/*设置上外边距*/
+}
+#content img{
+	display:block; 					/*将图片转换为块元素*/
+	margin: auto; 						/*设置图片居中对齐*/
+	max-width: 600px; 				/*设置图片的最大显示宽度*/
+	max-height: 400px; 				/*设置图片的最大显示高度*/
+}
+#content #leftlist{
+	width: 208px;					/*这里盒子的宽度大小根据“新闻中心”背景图片确定*/
+	float: left; 					/*设置左边盒子左浮动*/
+	}
+#content #rightlist {
+	float: left; 					/*设置右边盒子左浮动*/
+	width: 652px;  				/*设置右边盒子宽度*/
+	margin-left: 20px; 			/*设置右边盒子左外边距*/
+}
+.clear {
+	clear: both;
+}
+#search{
+	float:right;
+	font-size: 14px;
+	color:#C31103;				/*设置红色字体*/
+	font-weight:bold;
+	line-height: 30px;				/*这里的行高不能超过路径的行高（35px）*/
+	padding-right: 20px; 			/*为搜索框与右边对象保留20px的间距*/
+}
+#imageField{
+	margin-bottom:-7px;
+}
+#listTitle{
+	background: url(images/listhead.gif) no-repeat;			/*新闻标题的背景*/
+	line-height: 40px;
+	padding-left: 20px;
+	color: #FFFFFF;
+	font-size:14px;
+	font-weight:normal;
+	height:48px;
+}
+#content #leftlist ul{
+	background: url(images/listmiddle.gif) repeat-y;
+	padding:10px 0px;
+}
+#leftlist ul li{
+	list-style-type: circle;
+	list-style-position: inside;
+	line-height: 30px;
+	border-bottom: 1px dashed #999999;
+	margin:0 15px;
+	padding-left: 10px;
+}
+#leftlist ul li a{
+	text-decoration: none;
+	color: #000000;
+}
+#content #leftlist{
+	width: 208px;
+	float: left;
+	padding-bottom: 22px;
+	background: url(images/listfoot.gif) no-repeat;
+	background-position: bottom;
+}
+h2 {
+	border-bottom: 1px solid #666666;
+	line-height: 30px;
+	font-size: 14px;
+	width: 150px;
+}
+.fnt1{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 11px;
+color: #999999;
+}
+#content #rightlist ul{
+	border-top: 1px solid #999999;
+}
+#content #rightlist ul li{
+	line-height: 25px;
+	list-style-type: square;
+	list-style-position: inside;
+	border-bottom: 1px dashed #999999;
+}
+#content #rightlist ul li a{
+	text-decoration:none;
+	color: #333333;
+}
+#content #rightlist ul li a:hover{
+	color:#0099CC;
+}
+.newsTime {
+	float: right;
+}
+.fnt2{
+	color: #CC0033;
+	}
+#contrainer{
+	position: relative;		/*表示将contrainer盒子设置为相对定位*/
+	width:960px;
+	margin:0 auto;
+	height: 500px;
+	background-color:#FFF;
+}
+#contrainer #tpnews{
+	width:300px;		/*设置图片新闻栏目宽度*/
+	height:230px;		/*设置图片新闻栏目高度*/
+	position:absolute;	/*设置图片新闻栏目定位属性为绝对定位，参考对象为contrainer）*/
+	left:5px;			/*设置图片新闻栏目距#contrainer的左边5像素*/
+	top:0px;			/*设置图片新闻栏目距contrainer的上边0像素，即与contrainer顶部对齐*/
+}
+#contrainer #jtnews{
+	width: 350px; 	/*设置集团新闻栏目宽度*/
+	height:245px;		/*设置集团新闻栏目高度*/
+	position: absolute;	/*设置集团新闻栏目定位属性为绝对定位，参考对象为contrainer*/
+	left: 310px; 		/*设置集团新闻栏目距contrainer左边310像素*/
+	top: 0px; 		/*设置图片新闻栏目距contrainer上边0像素*/
+}
+#contrainer #gsjj {
+	width: 284px;
+height:250px;
+	line-height:20px;
+	position:absolute;	/*设置公司简介栏目的定位属性为绝对定位，参考对象为contrainer*/
+	top: 0px;			/*设置公司简介栏目距contrainer的上边0个像素*/
+	right: 5px;		/*设置公司简介栏目距contrainer右边5个像素*/
+}
+#contrainer #xmshow {
+	position:absolute;	/*设置项目展示栏目定位属性为绝对定位，参考对象为contrainer*/
+	left: 5px; 		/*设置项目展示栏目距contrainer的左边5个像素*/
+	top: 250px; 		/*设置项目展示栏目距contrainer的上边250个像素*/
+	width: 660px;
+	height: 230px;
+}
+#contrainer #searcher {
+	width: 217px;
+	height: 158px;
+	position: absolute; /*设置站内搜索栏目的定位属性为绝对定位，参考对象为contrainer*/
+	top: 280px; 	
+	right: 25px;
+	background:url(images/searchbg.gif) no-repeat;
+	text-align: center;
+}
+.fnt3 {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 30px;
+	padding-left: 10px;
+}
+#tpnews #imgnews{
+	background: url(images/imgbg.gif) no-repeat;
+	height: 200px; 				/*设置imgnews盒子的高度*/
+	text-align: center; 		/*使插入的图片在imgnews盒子里水平居中*/
+	width: 300px; 				/*设置imgnews盒子的宽度*/
+}
+#imgnews img {
+	height: 188px; 				/*设置图片高度*/
+	width: 288px; 				/*设置图片宽度*/
+	position: relative;			/*对元素应用相对定位属性*/
+	top: 6px; 					/*相对图片原来的上边缘位置下移6px*/
+}
+#tpnews #imgnews {
+	background-image: url(images/imgbg.gif) no-repeat;
+	height: 200px;
+	text-align: center;
+	width: 300px;
+	position: relative;		/*设置相对定位，以便将imgnews盒子作为祖先元素*/
+}
+#imgnews #tpbtn {
+	height: 20px;
+	width: 90px;
+	position: absolute; 					/*设置绝对定位*/
+	right: 5px; 						/*距imgnews右边框5像素*/
+	bottom: 5px; 						/*距imgnews下边框5像素*/
+}
+.fang {
+	float: left; 						/*设置左浮动*/
+	height: 15px; 						/*设置图片按钮高度*/
+	width: 15px; 						/*设置图片按钮宽度*/
+	margin-left: 5px; 					/*设置图片按钮左外边距*/
+	background-color: #CC0000; 		/*设置图片按钮背景颜色*/
+	color: #FFFFFF; 					/*设置图片按钮文字颜色*/
+}
+h1 {
+	line-height: 30px; 									/*设置行高*/
+	border-bottom: 1px solid #FF0000; 					/*设置下边框*/
+	font-family: "宋体";								/*设置字体*/
+	font-size: 14px; 									/*设置文字大小*/
+	padding-left: 20px; 								/*设置左内边距*/
+	background: url(images/ico5.gif) no-repeat 3px 7px; 		/*设置背景图片*/
+}
+#jtnews li{
+	background: url(images/ico1.gif) no-repeat 0px 5px; 		/*设置背景*/
+	line-height: 25px; 									/*设置行高*/
+	border-bottom: 1px dotted #999999; 					/*设置下边框*/
+	width: 340px; 									/*设置宽度*/
+	height: 25px; 										/*设置高度*/
+	overflow: hidden;									/*隐藏超过列表宽度的部分*/
+	position:relative;						/*表明可以做新闻时间的祖先元素*/
+}
+#jtnews li a{
+padding-left:10px; 								/*设置超链接左内边距*/
+text-decoration:none; 							/*去除超链接下划线*/
+color: #333333; 								/*设置超链接颜色*/
+}
+#jtnews li a:hover{
+color:#FF0000; 								/*设置鼠标访问时的超链接颜色*/
+}
+.ntime {
+	position: absolute;								/*使用绝对定位*/
+	top: 0px; 									/*距li块上边缘0像素*/
+	right: 0px; 									/*距li块右边缘0像素*/
+	font-family: "Times New Roman", Times, serif; 		/*设置字体*/
+	font-size: 10px; 								/*设置文字大小*/
+		background-color: #FFFFFF;
+	padding-left: 1px;							/*设置一点间距*/
+
+	}
+.right {float: right;}
+#xmshow img{
+	height: 190px; 				/*设置高度*/
+	width: 157px; 				/*设置宽度*/
+	margin: 5px 0 5px 5px; 			/*设置上、右、下、左外边距*/
+}
